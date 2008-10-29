@@ -1,5 +1,5 @@
 %define module   Mouse
-%define version  0.06
+%define version  0.10
 %define release  %mkrel 1
 
 Name:       perl-%{module}
@@ -9,7 +9,7 @@ License:    GPL or Artistic
 Group:      Development/Perl
 Summary:    Moose minus the antlers
 Url:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module//%{module}-%{version}.tar.gz
+Source:     http://search.cpan.org/CPAN/authors/id/S/SA/SARTAK/%{module}-%{version}.tar.gz
 BuildRequires: perl(Class::Method::Modifiers)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(MRO::Compat)
