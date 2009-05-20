@@ -1,6 +1,6 @@
 %define module   Mouse
 %define version  0.22
-%define release  %mkrel 1
+%define release  %mkrel 2
 
 Name:       perl-%{module}
 Version:    %{version}
@@ -17,6 +17,7 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
+Provides:      perl-Moose-implementation
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}
 
