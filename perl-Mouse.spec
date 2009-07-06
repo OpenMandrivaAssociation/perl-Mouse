@@ -1,5 +1,5 @@
 %define module   Mouse
-%define version  0.25
+%define version  0.27
 %define release  %mkrel 1
 
 Name:       perl-%{module}
