@@ -1,15 +1,16 @@
-%define module   Mouse
-%define version  0.27
-%define release  %mkrel 1
+%define upstream_name    Mouse
+%define upstream_version 0.28
 
-Name:       perl-%{module}
-Version:    %{version}
-Release:    %{release}
-License:    GPL or Artistic
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
+License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Moose minus the antlers
-Url:        http://search.cpan.org/dist/%{module}
-Source:     http://search.cpan.org/CPAN/authors/id/S/SA/SARTAK/%{module}-%{version}.tar.gz
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://search.cpan.org/CPAN/authors/id/S/SA/SARTAK/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires: perl(Class::Method::Modifiers)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(MRO::Compat)
@@ -17,9 +18,11 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
-Provides:      perl-Moose-implementation
+
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+
+Provides:      perl-Moose-implementation
 
 %description
 the Moose manpage is wonderful.
@@ -33,7 +36,7 @@ functionality, faster. In particular, the Moose/has manpage is missing only
 a few expert-level features.
 
 %prep
-%setup -q -n %{module}-%{version} 
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -54,5 +57,3 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
