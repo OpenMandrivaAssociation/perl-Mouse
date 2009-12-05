@@ -13,6 +13,7 @@ Source0:    http://search.cpan.org/CPAN/authors/id/S/SA/SARTAK/%{upstream_name}-
 
 BuildRequires: perl(Class::Method::Modifiers)
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(ExtUtils::ParseXS) >= 2.210.0
 BuildRequires: perl(MRO::Compat)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Exporter)
