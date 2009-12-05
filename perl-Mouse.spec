@@ -1,5 +1,5 @@
 %define upstream_name    Mouse
-%define upstream_version 0.40
+%define upstream_version 0.41
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -57,3 +57,5 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
+/usr/lib/debug
+/usr/src/debug
