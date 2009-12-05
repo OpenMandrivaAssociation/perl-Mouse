@@ -19,8 +19,8 @@ BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
+BuildRequires: perl-devel
 
-BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 Provides:      perl-Moose-implementation
