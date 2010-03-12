@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Release:    %mkrel 2
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
@@ -44,7 +44,7 @@ a few expert-level features.
 %make
 
 %check
-make test
+%make test
 
 %install
 rm -rf %buildroot
@@ -58,5 +58,3 @@ rm -rf %buildroot
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*
-/usr/lib/debug
-/usr/src/debug
