@@ -1,5 +1,5 @@
 %define upstream_name    Mouse
-%define upstream_version 0.55
+%define upstream_version 0.62
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
