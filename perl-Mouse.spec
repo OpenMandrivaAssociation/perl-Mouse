@@ -1,15 +1,15 @@
 %define upstream_name    Mouse
-%define upstream_version 0.93
+%define upstream_version 1.11
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:	2
+Release:    1
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Moose minus the antlers
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://search.cpan.org/CPAN/authors/id/S/SA/SARTAK/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://search.cpan.org/CPAN/authors/id/G/GF/GFUJI/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Class::Method::Modifiers)
 BuildRequires: perl(ExtUtils::MakeMaker)
@@ -20,8 +20,6 @@ BuildRequires: perl(Sub::Exporter)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
 BuildRequires: perl-devel
-
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 Provides:      perl-Moose-implementation
 
@@ -47,14 +45,9 @@ a few expert-level features.
 %make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
 
-%clean
-rm -rf %buildroot
-
 %files
-%defattr(-,root,root)
 %doc Changes
 %{_mandir}/man3/*
 %perl_vendorlib/*

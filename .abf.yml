@@ -1,2 +1,4 @@
+removed_sources:
+  Mouse-0.93.tar.gz: 36ce654b351237d452c2b8b90d03d1ff5a1586f3
 sources:
-  "Mouse-0.93.tar.gz": 36ce654b351237d452c2b8b90d03d1ff5a1586f3
+  Mouse-1.11.tar.gz: de43b93348c04c1a046220932f887bcb97a794a3
