@@ -8,7 +8,7 @@ Release:    1
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Moose minus the antlers
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://search.cpan.org/CPAN/authors/id/G/GF/GFUJI/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Class::Method::Modifiers)
