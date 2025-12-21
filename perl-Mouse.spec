@@ -11,6 +11,7 @@ Summary:    Moose minus the antlers
 Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://search.cpan.org/CPAN/authors/id/G/GF/GFUJI/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl(Class::Method::Modifiers)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(ExtUtils::ParseXS) >= 2.210.0
