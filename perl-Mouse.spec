@@ -1,15 +1,15 @@
 %define upstream_name    Mouse
-%define upstream_version 2.4.1
+%define upstream_version v2.6.2
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
+Version:    %{upstream_version}
 Release:    1
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Summary:    Moose minus the antlers
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://search.cpan.org/CPAN/authors/id/G/GF/GFUJI/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://github.com/xslate/p5-Mouse
+Source0:    https://cpan.metacpan.org/authors/id/S/SY/SYOHEX/Mouse-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires: perl(Class::Method::Modifiers)
